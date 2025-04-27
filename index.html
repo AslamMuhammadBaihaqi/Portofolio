@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>Junior Web Developer | Portfolio</title>
+    <meta name="description" content="This is the personal portfolio website of a Junior Web Developer showcasing skills, projects, and contact information." />
+    <meta name="keywords" content="Web Developer, Junior Developer, Portfolio, Front-End Developer, HTML, CSS, JavaScript" />
+    <meta name="author" content="Your Name" />
+    <link rel="canonical" href="https://yourwebsite.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourwebsite.com/" />
+    <meta property="og:title" content="Junior Web Developer | Portfolio" />
+    <meta property="og:description" content="This is the personal portfolio website of a Junior Web Developer showcasing skills, projects, and contact information." />
+    <meta property="og:image" content="assets/img/profile.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://yourwebsite.com/" />
+    <meta property="twitter:title" content="Junior Web Developer | Portfolio" />
+    <meta property="twitter:description" content="This is the personal portfolio website of a Junior Web Developer showcasing skills, projects, and contact information." />
+    <meta property="twitter:image" content="assets/img/profile.jpg" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "0YGN_O_-_7H7Xkuy0",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <header>
+      <div class="nav-container">
+        <div class="logo">A</div>
+
+        <nav class="nav-links" id="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button id="theme-toggle">🌙</button>
+          <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="home" class="home">
+      <div class="home-content" data-aos="fade-up">
+        <h1>Hello, I'm <span>Aslam</span></h1>
+        <h2 class="typing-text"></h2>
+
+        <div class="home-buttons">
+          <a href="#contact" class="btn">Hire Me</a>
+          <a href="#portfolio" class="btn btn-light">See My Work</a>
+        </div>
+      </div>
+      <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          style="fill: var(--wave-color)"
+          fill-opacity="1"
+          d="M0,160L60,138.7C120,117,240,75,360,80C480,85,600,139,720,176C840,213,960,235,1080,224C1200,213,1320,171,1380,149.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <section id="about" class="about" data-aos="fade-right">
+      <h2>About Me</h2>
+      <p>I'm a passionate Web Developer with experience in creating responsive, dynamic, and user-centered websites. I specialize in front-end and love building clean UI designs.</p>
+
+      <div class="experience">
+        <div class="exp-item" data-aos="zoom-in">
+          <h3>HTML/CSS</h3>
+          <h4>Advanced</h4>
+          <p>Experience building responsive designs.</p>
+        </div>
+        <div class="exp-item" data-aos="zoom-in" data-aos-delay="100">
+          <h3>JavaScript</h3>
+          <h4>Advanced</h4>
+          <p>Modern ES6+, frameworks like React and Vue.js.</p>
+        </div>
+        <div class="exp-item" data-aos="zoom-in" data-aos-delay="200">
+          <h3>Backend</h3>
+          <h4>Intermediate</h4>
+          <p>Experience with PHP Laravel.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="about" data-aos="fade-up">
+      <h2>My Projects</h2>
+      <p>Here are some of my recent works.</p>
+
+      <div class="portfolio-gallery">
+        <div class="portfolio-item">
+          <img src="assets/img/B-Universe.png" alt="Project 1" />
+          <h3>Project Title 1</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="assets/img/Toko_game.png" alt="Project 2" />
+          <h3>Project Title 2</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="assets/img/toko_jersey.jpg" alt="Project 3" />
+          <h3>Project Title 3</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="assets/img/kota-bogor.png" alt="Project 4" />
+          <h3>Project Title 4</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="about" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <p>I'm currently open for freelance projects or full-time opportunities. Let's work together!</p>
+
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Scroll to Top -->
+    <button id="scrollTopBtn">↑</button>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </body>
+</html>
