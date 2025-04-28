@@ -425,7 +425,7 @@ form#contact-form textarea {
 /* Home Section */
 .home {
   height: 100vh;
-  background: url("assets/img/bg2.jpg") no-repeat center center/cover;
+  background: url("assets/img/B-Universe.png") no-repeat center center/cover;
   position: relative;
   display: flex;
   justify-content: center;
